@@ -1,6 +1,6 @@
 import isValid from "./is-valid";
-
 type separator = "ws" | "." | "-";
+type options = { separator?: separator };
 
 /**
  * formats the BI code
@@ -8,10 +8,10 @@ type separator = "ws" | "." | "-";
  * @param separator (optional) type of digit separator default "."
  * @returns formatted string BI code
  */
-export default function format(id: string, separator?: separator): string {
+export default function format(id: string, options?: options): string {
   if (!isValid(id)) throw new Error("invalid id");
 
-  if (!separator) separator = "." as separator;
+  let separator = options?.separator ?? ".";
   if (separator && separator === "ws") separator = " " as separator;
 
   const lastDigit = id.charAt(id.length - 1).toUpperCase();
