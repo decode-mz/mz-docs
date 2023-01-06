@@ -1,8 +1,8 @@
-import { isValid } from "./bi";
+import { isValid, format } from "./bi";
 
 /**
  * All BI modules
  */
-const bi = { isValid };
+const bi = { isValid, format };
 
 export { bi as bi };
