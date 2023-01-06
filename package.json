@@ -1,0 +1,27 @@
+{
+  "name": "mz-docs",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": "false",
+  "main": "/build/index.js",
+  "description": "Mozambican identity document checker, generator and handler",
+  "repository": "git@github.com:NETEG-MOZAMBIQUE/mz-docs.git",
+  "scripts": {
+    "build": "tsx ./src/index.ts"
+  },
+  "author": {
+    "name": "Neteg",
+    "url": "https://github.com/NETEG-MOZAMBIQUE/"
+  },
+  "engines": {
+    "node": ">=12.20"
+  },
+  "bugs": {
+    "url": "https://github.com/NETEG-MOZAMBIQUE/mz-docs/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.4"
+  }
+}
